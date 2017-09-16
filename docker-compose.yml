@@ -1,0 +1,10 @@
+version: "3"
+services:
+  archive:
+    build: .
+    image: ficarchive-web:latest
+    ports:
+    - "80:80"
+  mysql:
+    build: ./db
+    image: ficarchive-sql:latest

@@ -1,0 +1,492 @@
+/******************************************************************************
+ * Set some default fonts, sizes and spacing for various elements.
+ *****************************************************************************/
+
+body {
+    margin:             8px;
+}
+
+body,
+td,
+th,
+input,
+select,
+textarea {
+    font-family:        Verdana, Arial, Helvetica, sans-serif;
+    font-size:          10pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight:        bold;
+}
+
+h1 {
+    font-size:          18pt;
+}
+
+h2 {
+    font-size:          14pt;
+}
+
+h3 {
+    font-size:          12pt;
+}
+
+h4 {
+    font-size:          11pt;
+}
+
+h5 {
+    font-size:          10pt;
+}
+
+h6 {
+    font-style:         italic;
+    font-size:          10pt;
+}
+
+li {
+    padding:            0.2em 0em;
+}
+
+dt {
+    font-weight:        bold;
+    padding-top:        0.3em;
+}
+
+hr {
+    border:             1px solid black;
+}
+
+/******************************************************************************
+ * Traditional color scheme for links, but using inverse-video highlighting on
+ * hover.
+ *****************************************************************************/
+
+a {
+    text-decoration:    none;
+    color:              #0000DD;
+}
+
+a:visited {
+    color:              #8800BB;
+}
+
+a:visited:hover {
+    background-color:   #8800BB;
+}
+
+a:hover {
+    background-color:   #0000DD;
+    color:              white;
+    text-decoration:    none;
+}
+
+/******************************************************************************
+ * Class "inverse" for light-on-dark text. Defaults to white-on-black, and sets
+ * lighter colors for links.
+ *****************************************************************************/
+
+.inverse,
+.inverse td,
+.inverse th {
+    background-color:   black;
+    color:              white;
+}
+
+.inverse a {
+    color:              #AAAAFF;
+}
+
+.inverse a:visited {
+    color:              #DD77FF;
+}
+
+.inverse a:visited:hover {
+    background-color:   #DD77FF;
+}
+
+.inverse a:hover {
+    background-color:   #AAAAFF;
+    color:              black;
+}
+
+/******************************************************************************
+ * Classes "notice", "warning" and "error" are used for message boxes
+ *****************************************************************************/
+
+.notice,
+.warning,
+.error {
+    border-width:       4px;
+    border-style:       solid;
+    margin-left:        auto;
+    margin-right:       auto;
+    padding:            0.2em;
+    width:              80%;
+}
+
+.notice {
+    background:         #F8FFF8;
+    border-color:       #00FF00;
+}
+
+.warning {
+    background:         #FFFFF0;
+    border-color:       #FFFF00;
+}
+
+.error {
+    background:         #FFF8F8;
+    border-color:       #FF0000;
+}
+
+.inverse .notice {
+    background:         #004400;
+}
+
+.inverse .warning {
+    background:         #444400;
+}
+
+.inverse .error {
+    background:         #440000;
+}
+
+/******************************************************************************
+ * Header/footer
+ *****************************************************************************/
+
+#fa_header {
+    margin:             -8px -8px 8px -8px;
+    padding:            8px;
+}
+
+/******************************************************************************
+ * ID "ratings" is for the display of one or more ratings.
+ *****************************************************************************/
+
+
+#ratings {
+    border-collapse:    collapse;
+    border-spacing:     0;
+}
+
+#ratings td,
+#ratings th {
+    border:             1px dotted black;
+    padding:            0.3em;
+    text-align:         center;
+    vertical-align:     middle;
+}
+
+#ratings th {
+    font-family:        "Times New Roman", Times, serif;
+    font-size:          24pt;
+    white-space:        nowrap;
+}
+
+#ratings .hilite td,
+#ratings .hilite th {
+    border:             3px solid black;
+}
+
+/******************************************************************************
+ * ID "disclaimer" is the disclaimer box.
+ *****************************************************************************/
+
+#disclaimer {
+    padding:            1em;
+    border:             2px solid white;
+}
+#disclaimer #ratings td,
+#disclaimer #ratings th {
+    border:             3px solid white;
+}
+
+/******************************************************************************
+ * ID "threads" is a table listing threads.
+ * Class "comment" is a single comment.
+ *****************************************************************************/
+
+#threads {
+    width:              100%;
+}
+
+#threads,
+.comment {
+    background:         #EEEEFF;
+    border:             1px solid black;
+    border-collapse:    collapse;
+    border-spacing:     0px;
+    margin:             0.2em 0em;
+}
+
+#threads td,
+#threads th,
+.comment td,
+.comment th {
+    padding:            0em 0.2em 0.1em;
+    vertical-align:     top;
+}
+
+#threads th,
+.comment .header th {
+    text-align:         left;
+}
+
+#threads .number,
+#threads .time,
+#threads .pages,
+.comment .header td,
+.comment .footer td {
+    text-align:         right;
+    white-space:        nowrap;
+}
+
+#threads .odd,
+.comment .header,
+.comment .footer {
+    background:         #CCCCFF;
+    height:             1px;
+}
+
+#threads .sticky-odd {
+    background:         #AAFFAA;
+}
+
+#threads .sticky-even {
+    background:         #DDFFDD;
+}
+
+#threads .deleted-odd {
+    background:         #FFCCCC;
+}
+
+#threads .deleted-even {
+    background:         #FFEEEE;
+}
+
+.comment .re {
+    background:         #FFDDEE;
+    font-weight:        bold;
+    height:             1px;
+}
+
+.comment .alert {
+    background:         #FFFFCC;
+    height:             1px;
+}
+
+.comment .new {
+    background:         #DDFFCC;
+    height:             1px;
+}
+
+.comment .new .next {
+    text-align:         right;
+}
+
+.comment .footer td {
+    vertical-align:     bottom;
+}
+
+.comment .footer td.edit {
+    text-align:         left;
+}
+
+/******************************************************************************
+ * Class "data" gives a table with limited grid lines.
+ *****************************************************************************/
+
+.data {
+    border-collapse:    collapse;
+    border-style:       hidden;
+}
+
+.data th {
+    border-bottom:      1px solid black;
+}
+
+.data th,
+.data td {
+    border-left:        1px solid black;
+    border-right:       1px solid black;
+    padding:            0.1em 0.2em 0em;
+    text-align:         left;
+    vertical-align:     top;
+}
+
+/******************************************************************************
+ * Classes for various story metadata.
+ *****************************************************************************/
+
+.rating {
+    color:              #660022;
+}
+
+.date {
+    color:              #004466;
+}
+
+.size {
+    color:              #660088;
+}
+
+.categories {
+    color:              #006600;
+}
+
+.pairings {
+    color:              #884400;
+}
+
+.chapters,
+.notes {
+    display:            block;
+    font-size:          8pt;
+    margin-left:        2em;
+    white-space:        pre-wrap;
+}
+
+.chapters a {
+    font-weight:        bold;
+}
+
+/******************************************************************************
+ * OTHER STUFF...
+ *****************************************************************************/
+
+.author,
+.chapter {
+    font-size:          12pt;
+    font-weight:        bold;
+    border-bottom:      1px dotted black;
+    border-top:         1px dotted black;
+    padding:            0.1em;
+}
+
+table.checkboxes,
+table.reorder {
+    border-spacing:     0px;
+}
+
+.checkboxes td {
+    vertical-align:     top;
+    padding:            0px;
+}
+
+.reorder td {
+    text-align:         center;
+}
+
+.info tr,
+.login tr {
+    vertical-align:     baseline;
+}
+
+tr.multiline,
+tr.multitop,
+tr.multibot {
+    vertical-align:     top;
+}
+
+tr.multitop th {
+    height:             1;
+}
+
+tr.multibot td {
+    text-align:         right;
+}
+
+.info td,
+.info th,
+.login th {
+    text-align:         left;
+}
+
+.info th,
+.login th {
+    white-space:        nowrap;
+}
+
+.info th:after,
+.login th:after {
+    content:            ":";
+}
+
+.info .title td,
+.info .title_selected td {
+    font-style:         italic;
+    font-weight:        bold;
+}
+
+.info tr.title_selected {
+    background:         #0000FF;
+}
+
+.login td,
+td.checkbox {
+    text-align:         right;
+}
+
+.letters,
+.commentlinks {
+    border-bottom:      1px solid black;
+    border-top:         1px solid black;
+    clear:              both;
+    padding:            0.1em 0em 0.2em;
+    text-align:         center;
+}
+
+.series .story {
+    margin-left:        2em;
+}
+
+.story,
+.subscription {
+    margin-bottom:      0.3em;
+}
+
+.user .subscription {
+    margin-left:        2em;
+}
+
+.help {
+    font-size:          8pt;
+}
+
+.hidden {
+    text-decoration:    line-through;
+}
+
+img.usericon {
+    border:             0px;
+    vertical-align:     bottom;
+}
+
+img.avatar {
+    float:              right;
+    padding:            0px 0px 4px 4px;
+}
+
+td.avatar {
+    padding:            4px;
+    width:              1px;
+}
+
+.avatars img {
+    border:             none;
+}
+
+.avatars td {
+    padding:            8px;
+}
+
+.avatars td.selected {
+    background:         #808080;
+}
